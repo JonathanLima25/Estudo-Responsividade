@@ -1,3 +1,8 @@
+@import 'base';
+
+$text-color: white;
+
 body {
     background-color: #7159c1;
+    color: $text-color;
 }
