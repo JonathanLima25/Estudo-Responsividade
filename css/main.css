@@ -1,6 +1,6 @@
 body {
   background-color: #7159c1;
-  color: orange;
+  color: black;
 }
 
 .container {
@@ -11,12 +11,25 @@ body {
   background-color: white;
 }
 
-.container p {
+.container .prof {
   -webkit-box-shadow: 3px 3px 4px 1px rgba(255, 165, 0, 0.6);
           box-shadow: 3px 3px 4px 1px rgba(255, 165, 0, 0.6);
   background-color: red;
   width: 100px;
   height: 100px;
   color: blue;
+  font-weight: bold;
+}
+
+.container #danger {
+  color: red;
+}
+
+.container #alert {
+  color: yellow;
+}
+
+.container #positive {
+  color: green;
 }
 /*# sourceMappingURL=main.css.map */
