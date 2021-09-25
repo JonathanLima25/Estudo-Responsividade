@@ -19,7 +19,18 @@ $text-color: black;
     }
     @else {
         color: green;
+    } 
+}
+
+@for $i from 1 through 6 {
+    .mina-#{$i} {
+        font-size: 15px * $i;
     }
+}
+
+$colors: (color1: blue, color2: yellow, color3: green);
+@each $key, $color in $colors {
+    .#{$color}-text {color: $color;}
 }
 
 body {
@@ -31,11 +42,11 @@ body {
     @include box-shadow(rgba(0,0,0,0.6));
     width: 200px;
     height: 200px;
-    background-color: white;
+    background-color: gray;
     $text-color: blue;
     .prof {
         @include box-shadow(orange);
-        background-color: red;
+        background-color: purple;
         width: 100px;
         height: 100px;
         color: $text-color;

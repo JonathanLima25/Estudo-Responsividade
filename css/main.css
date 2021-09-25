@@ -1,3 +1,39 @@
+.mina-1 {
+  font-size: 15px;
+}
+
+.mina-2 {
+  font-size: 30px;
+}
+
+.mina-3 {
+  font-size: 45px;
+}
+
+.mina-4 {
+  font-size: 60px;
+}
+
+.mina-5 {
+  font-size: 75px;
+}
+
+.mina-6 {
+  font-size: 90px;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
+.green-text {
+  color: green;
+}
+
 body {
   background-color: #7159c1;
   color: black;
@@ -8,13 +44,13 @@ body {
           box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.6);
   width: 200px;
   height: 200px;
-  background-color: white;
+  background-color: gray;
 }
 
 .container .prof {
   -webkit-box-shadow: 3px 3px 4px 1px rgba(255, 165, 0, 0.6);
           box-shadow: 3px 3px 4px 1px rgba(255, 165, 0, 0.6);
-  background-color: red;
+  background-color: purple;
   width: 100px;
   height: 100px;
   color: blue;
