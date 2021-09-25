@@ -12,13 +12,13 @@ $text-color: black;
 
 @mixin text-effect($var) {
     @if $var == danger {
-        color: red;
+        color: darken(red, 10);
     }
     @else if $var == alert {
-        color: yellow;
+        color: darken(yellow, 10);
     }
     @else {
-        color: green;
+        color: darken(green, 10);
     } 
 }
 
@@ -30,10 +30,19 @@ $text-color: black;
 
 $colors: (color1: blue, color2: yellow, color3: green);
 @each $key, $color in $colors {
-    .#{$color}-text {color: $color;}
+    .#{$color}-text {color: darken($color, 10);}
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
+    @extend .flex;
+    height: 100%;
+    flex-direction: column;
     background-color: #7159c1;
     color: $text-color;
 }
@@ -63,3 +72,4 @@ body {
     }
     
 }
+
