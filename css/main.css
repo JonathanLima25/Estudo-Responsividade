@@ -85,4 +85,8 @@ body {
 .container #positive {
   color: #004d00;
 }
+
+p:hover {
+  color: pink;
+}
 /*# sourceMappingURL=main.css.map */
