@@ -2,8 +2,7 @@ header {
     background-color: $prymari-color;
 
     .container {
-        display: flex;
-        align-items: center;
+        @extend .flexCenter;
         justify-content: space-between;
     
         @include boundaries();
