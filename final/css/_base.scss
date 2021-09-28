@@ -1,4 +1,4 @@
-$prymari-color: #7159c1;
+$primary-color: #7159c1;
 
 @mixin boundaries($isAuto: true) {
   width: 90%;
@@ -12,6 +12,15 @@ $prymari-color: #7159c1;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@function set-text-color($color) {
+  @if lightness($color) > 70 {
+    @return #333;
+  }
+  @else{
+    @return white;
+  }
 }
 
 * {

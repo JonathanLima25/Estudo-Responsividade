@@ -1,5 +1,5 @@
 header {
-    background-color: $prymari-color;
+    background-color: $primary-color;
 
     .container {
         @extend .flexCenter;
@@ -21,7 +21,7 @@ header {
 
             a {
                 text-decoration: none;
-                color: white;
+                color: set-text-color($primary-color);
                 text-transform: uppercase;
                 font-size: 1.4rem;
                 padding: 2.4rem;
