@@ -6,10 +6,7 @@ header {
         align-items: center;
         justify-content: space-between;
     
-        width: 90%;
-        max-width: 980px;
-    
-        margin: auto;
+        @include boundaries();
     }
 
     img {

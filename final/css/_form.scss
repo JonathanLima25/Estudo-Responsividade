@@ -4,7 +4,7 @@ FORM
 #form {
     width: 100%;
   
-    background: #7159c1;
+    background: $prymari-color;
     padding: 80px 0;
     margin: 0;
   
@@ -13,8 +13,7 @@ FORM
     justify-content: center;
 
     form {
-        width: 90%;
-        max-width: 980px;
+        @include boundaries($isAuto: False);
       
         background: white;
       

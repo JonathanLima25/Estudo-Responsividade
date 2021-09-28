@@ -2,9 +2,7 @@
 CARDS
 ==================*/
 .cards {
-    width: 90%;
-    max-width: 980px;
-    margin: auto;
+    @include boundaries();
   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -21,7 +19,7 @@ CARDS
   .card {
     display: flex;
     flex-direction: column;
-    background-color: #7159c1;
+    background-color: $prymari-color;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     &:hover {

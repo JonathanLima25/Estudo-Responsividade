@@ -247,7 +247,6 @@ MODAL
   visibility: visible;
 }
 
-.modal-overlay
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,7 +275,6 @@ MODAL
           transform: scale(1.2);
 }
 
-.modal-overlay
 .modal .close-modal {
   position: absolute;
   cursor: pointer;
@@ -291,13 +289,11 @@ MODAL
           transition-delay: 0.3s;
 }
 
-.modal-overlay
 .modal .close-modal svg {
   width: 18px;
   height: 18px;
 }
 
-.modal-overlay
 .modal .modal-content {
   opacity: 0;
   -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
@@ -366,6 +362,7 @@ FORM
 #form form {
   width: 90%;
   max-width: 980px;
+  margin: auto;
   background: white;
   padding: 40px;
   -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.15), 0px 10px 20px -10px rgba(0, 0, 0, 0.1);
